@@ -1,0 +1,9 @@
+
+@import "index.css";
+
+.App {
+
+  color: var(--colorFont);
+    text-align: center;
+  background-color: inherit;
+}

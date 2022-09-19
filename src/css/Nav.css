@@ -1,0 +1,26 @@
+@import "index.css";
+
+
+
+
+.Nav {
+    width:100%;
+    background-color: var(--clrAccent2);
+    padding: 1em 0;
+}
+
+.nav-list {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav-item {
+    list-style: none;
+}
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
