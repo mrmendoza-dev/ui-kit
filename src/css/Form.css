@@ -1,0 +1,26 @@
+
+.Form {
+    margin: 0 auto;
+        display: flex;
+    justify-content: center;
+
+}
+
+.form-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
