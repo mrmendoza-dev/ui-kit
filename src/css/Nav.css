@@ -1,14 +1,24 @@
 @import "index.css";
 
 
-
-
 .Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width:100%;
     background-color: var(--clrAccent2);
-    padding: 1em 0;
+    color: #fff;
+    padding: 1.2em 1em;
 }
 
+.nav-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+.nav-logo {
+    height: 40px;
+}
 .nav-list {
     display: flex;
     gap: 2em;
@@ -18,9 +28,22 @@
 }
 .nav-item {
     list-style: none;
+    font-size: 1.2rem;
 }
 .nav-link {
     text-decoration: none;
     color: inherit;
     font-weight: bold;
+}
+
+.theme-btn {
+    background-color: inherit;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    width: 40px;
+    transition: text-shadow .2s;
+}
+.theme-btn:hover {
+    text-shadow: 0 0 15px white;
 }

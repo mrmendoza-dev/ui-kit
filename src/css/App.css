@@ -1,9 +1,22 @@
 
 @import "index.css";
 
-.App {
 
-  color: var(--colorFont);
-    text-align: center;
-  background-color: inherit;
+.App {
+  text-align: center;
+  color: var(--clrFont);
+  max-height: 100vh;
+}
+
+
+
+.AppPage {
+  background-color: var(--clrBg);
+  height: 100%;
+  min-height: 500px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1em;
+  border-radius: 15px;
+
 }
