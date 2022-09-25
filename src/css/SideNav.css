@@ -1,0 +1,25 @@
+
+
+
+.SideNav {
+    height: 100%;
+        background-color: var(--clrAccent1);
+    color: #fff;
+    padding: 1.2em 1em;
+}
+
+.side-nav-list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.side-nav-item {
+    list-style-type: none;
+}
+
+.side-nav-link {
+    color: inherit;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
