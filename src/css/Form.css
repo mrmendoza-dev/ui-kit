@@ -11,13 +11,89 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: .6em;
 }
 
 
 
 
+.form-input-block {
+
+}
+
+.form-input, .form-textarea, .form-select {
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #ddd;
+    border: 1px solid #bbb;
+    outline: none;
+    padding: .3em .8em;
+
+}
+
+.form-input {
+    font-size: 1.2rem;
+    width: 100%;
+}
 
 
+
+.form-textarea {
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-family: inherit;
+    font-weight: 400;
+    width: 100%;
+    resize: none;
+}
+
+
+.form-checkbox {
+    
+}
+
+
+
+.form-fieldset {
+
+}
+
+
+
+.form-legend {
+    border-radius: 20px;
+    font-size: 1.2rem;
+    padding: .3em .6em;
+}
+
+
+
+
+.form-radio {
+    width: 30px;
+}
+
+
+.form-select {
+    font-size: 1.2rem;
+}
+
+
+
+.form-submit {
+    font-size: 1.2rem;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #ddd;
+    border: 1px solid #bbb;
+    outline: none;
+    padding: .4em .8em; 
+    background-color: var(--clrContrast);   
+    color: #fff;
+    font-weight: 500;
+    font-family: inherit;
+}
+.form-submit:hover {
+
+}
 
 
 

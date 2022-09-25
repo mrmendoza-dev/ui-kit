@@ -36,6 +36,7 @@ export default function Form() {
 
         <div className="form-main">
           <input
+            className="form-input"
             type="text"
             placeholder="First Name"
             onChange={handleChange}
@@ -43,6 +44,7 @@ export default function Form() {
             value={formData.firstName}
           />
           <input
+            className="form-input"
             type="text"
             placeholder="Last Name"
             onChange={handleChange}
@@ -50,6 +52,7 @@ export default function Form() {
             value={formData.lastName}
           />
           <input
+            className="form-input"
             type="email"
             placeholder="Email"
             onChange={handleChange}
@@ -57,26 +60,20 @@ export default function Form() {
             value={formData.email}
           />
           <textarea
+            className="form-textarea"
             value={formData.comments}
             placeholder="Comments"
             onChange={handleChange}
             name="comments"
           />
-          <input
-            type="checkbox"
-            id="isFriendly"
-            checked={formData.isFriendly}
-            onChange={handleChange}
-            name="isFriendly"
-          />
-          <label htmlFor="isFriendly">Are you friendly?</label>
         </div>
 
         <br />
 
-        <fieldset>
-          <legend>Current employment status</legend>
+        <fieldset className="form-fieldset">
+          <legend className="form-legend">Current employment status</legend>
           <input
+            className="form-radio"
             type="radio"
             id="unemployed"
             name="employment"
@@ -88,6 +85,7 @@ export default function Form() {
           <br />
 
           <input
+            className="form-radio"
             type="radio"
             id="part-time"
             name="employment"
@@ -99,6 +97,7 @@ export default function Form() {
           <br />
 
           <input
+            className="form-radio"
             type="radio"
             id="full-time"
             name="employment"
@@ -111,6 +110,17 @@ export default function Form() {
         </fieldset>
         <br />
 
+        <input
+          className="form-checkbox"
+          type="checkbox"
+          id="isFriendly"
+          checked={formData.isFriendly}
+          onChange={handleChange}
+          name="isFriendly"
+        />
+        <label htmlFor="isFriendly">Are you friendly?</label>
+        <br />
+
         <label htmlFor="favColor">What is your favorite color?</label>
         <br />
         <select
@@ -118,6 +128,7 @@ export default function Form() {
           value={formData.favColor}
           onChange={handleChange}
           name="favColor"
+          className="form-select"
         >
           <option value="red">Red</option>
           <option value="orange">Orange</option>
@@ -129,7 +140,7 @@ export default function Form() {
         </select>
         <br />
         <br />
-        <button>Submit</button>
+        <button className="form-submit">Submit</button>
       </form>
     </div>
   );

@@ -73,12 +73,12 @@ export default function DarkMode() {
     }
 
     return (
-        <button className="theme-btn" onClick={changeTheme}>
+      <button className="theme-btn" onClick={changeTheme}>
         {darkMode ? (
-            <i className="fa-solid fa-moon"></i>
+          <i className="fa-solid fa-sun"></i>
         ) : (
-            <i className="fa-solid fa-sun"></i>
+          <i className="fa-solid fa-moon"></i>
         )}
-        </button>
+      </button>
     );
 }
