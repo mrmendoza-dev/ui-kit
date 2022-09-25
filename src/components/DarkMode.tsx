@@ -4,12 +4,12 @@ import "../css/index.css";
 
 
 export default function DarkMode() {
-    const root = document.querySelector(":root");
+    const root: any = document.querySelector(":root");
     const rootStyles = getComputedStyle(root);
     const [darkMode, setDarkMode] = useState(loadTheme);
 
     function loadTheme() {
-      let savedTheme = JSON.parse(localStorage.getItem("darkMode"));
+      let savedTheme: any = JSON.parse(localStorage.getItem("darkMode") || "false");
       if (savedTheme != undefined) {
         return savedTheme;
       } else {
@@ -69,7 +69,7 @@ export default function DarkMode() {
     }
 
     function changeTheme() {
-        setDarkMode((prevTheme) => !prevTheme);
+        setDarkMode((prevTheme: any) => !prevTheme);
     }
 
     return (
