@@ -4,12 +4,19 @@
 - Live demos
 - Focus on React components
 
-## Examples
+## Components
 - Buttons
+  - Toggled Buttons
 - Forms
 - Wrappers
 - Modals
 - Carousels
+- Progress Bars
+- Pagination
+- Audio Player
+- Video Player
+- Scrolling Marquees
+- Dark Mode Toggler
 
 ## Mini Projects
 - Autofill Search
