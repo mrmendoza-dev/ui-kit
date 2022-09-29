@@ -11,3 +11,9 @@
 - Modals
 - Carousels
 
+## Mini Projects
+- Autofill Search
+- Unit Converter
+- Counter
+- Clock/Timer
+- Item Filtering
