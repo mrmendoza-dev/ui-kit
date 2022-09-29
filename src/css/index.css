@@ -1,37 +1,19 @@
-
-
 :root {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-
-
-    --clrContrast: #fe5f55;
-    --clrAccent1: #bdd5ea;
-    --clrAccent2: #577399;
-    --clrBg: #f7f7ff;
-    --clrFont: #242424;
-
-
-    --lightContrast: #fe5f55;
-    --lightAccent1: #bdd5ea;
-    --lightAccent2: #577399;
-    --lightBg: #f7f7ff;
-    --lightFont: #242424;
-  
-    --darkContrast: #641ddf;
-    --darkAccent1: #2f5270;
-    --darkAccent2: #1e375a;
-    --darkBg: #242424;
-    --darkFont: #f7f7ff;
+  --clr-contrast: #fe5f55;
+  --clr-accent1: #bdd5ea;
+  --clr-accent2: #577399;
+  --clr-bg: #f7f7ff;
+  --clr-font: #242424;
 }
 
 * {
@@ -39,15 +21,13 @@
   margin: 0;
 }
 
-
-
 body {
   margin: 0;
   background-color: var(--colorBg);
-    background-color: rgb(53, 53, 53);
+  background-color: rgb(53, 53, 53);
 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -66,5 +46,3 @@ img {
 a {
   text-decoration: none;
 }
-
-

@@ -1,25 +1,19 @@
-
 @import "index.css";
-
 
 .App {
   text-align: center;
-  color: var(--clrFont);
+  color: var(--clr-font);
   max-height: 100vh;
-  
 }
 
-
-
 .AppPage {
-  background-color: var(--clrBg);
+  background-color: var(--clr-bg);
   height: 100%;
   min-height: 500px;
   width: 90%;
   margin: 0 auto;
   margin-top: 1em;
   border-radius: 15px;
-
 }
 
 .page {

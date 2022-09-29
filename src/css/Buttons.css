@@ -1,13 +1,8 @@
-
-
-
 .btn-main {
-    background-color: var(--clrContrast);
-    padding: .5em 1em;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 15px;
-    border: none;
+  background-color: var(--clr-contrast);
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
 }
-
-
