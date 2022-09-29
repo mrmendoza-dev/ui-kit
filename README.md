@@ -5,6 +5,8 @@
 - Focus on React components
 
 ## Components
+- Navbars
+- Sidebars
 - Buttons
   - Toggled Buttons
 - Forms
@@ -18,9 +20,13 @@
 - Scrolling Marquees
 - Dark Mode Toggler
 
-## Mini Projects
+## Mini Apps
 - Autofill Search
 - Unit Converter
 - Counter
 - Clock/Timer
 - Item Filtering
+- Calculator
+- Weather Tracker
+- Stock Tracker
+- Crypto Tracker
