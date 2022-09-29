@@ -6,6 +6,7 @@
 
 ## Components
 - Navbars
+- Footers
 - Sidebars
 - Buttons
   - Toggled Buttons
