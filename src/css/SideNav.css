@@ -1,6 +1,6 @@
 .SideNav {
   height: 100%;
-  background-color: var(--clr-accent1);
+  background-color: var(--clr-contrast);
   color: #fff;
   padding: 1.2em 1em;
 }
@@ -8,10 +8,12 @@
 .side-nav-list {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .side-nav-item {
   list-style-type: none;
+  text-align: left;
 }
 
 .side-nav-link {

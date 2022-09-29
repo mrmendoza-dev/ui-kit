@@ -6,7 +6,9 @@ import DarkMode from "./DarkMode";
 import logo from "../assets/images/logo.png";
 
 
-export default function Nav() {
+export default function Nav(props: any) {
+
+
   return (
     <div className="Nav">
       <div className="nav-title">
@@ -16,21 +18,13 @@ export default function Nav() {
       </div>
 
       <ul className="nav-list">
-        <li className="nav-item">
-          <Link className="nav-link" to="/">
-            Home
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/examples">
-            Examples
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/settings">
-            Settings
-          </Link>
-        </li>
+        {props.links.map((link) => (
+          <li className="nav-item">
+            <Link className="nav-link" to={link.path}>
+              {link.name}
+            </Link>
+          </li>
+        ))}
       </ul>
 
       <DarkMode />

@@ -1,35 +1,35 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './css/App.css'
 import Nav from "./components/Nav"
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home"
 import Examples from "./pages/Examples";
+import Apps from "./pages/Apps";
 import Settings from "./pages/Settings";
 import SideNav from "./components/SideNav";
 import Form from "./components/Form";
 import Buttons from "./components/Buttons";
-
+import {navLinks, exampleLinks, appLinks} from "./routing"
 function App() {
   const [count, setCount] = useState(0)
 
+
+
+
   return (
     <div className="App">
-      <Nav />
+      <Nav links={navLinks}/>
 
       <div className="AppPage">
         {/* <SideNav /> */}
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/examples" element={<Examples />} />
-
-          <Route path="/examples" element={<Examples />} />
-          <Route
-            path="/examples/forms"
-            element={<Form />}
-          />
+          <Route path="/examples" element={<Examples links={exampleLinks}/>} />
+          <Route path="/examples/forms" element={<Form />} />
           <Route path="/examples/buttons" element={<Buttons />} />
+
+          <Route path="/apps" element={<Apps links={appLinks}/>} />
 
           <Route path="/settings" element={<Settings />} />
         </Routes>

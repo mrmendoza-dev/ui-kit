@@ -10,10 +10,12 @@
   -webkit-text-size-adjust: 100%;
 
   --clr-contrast: #fe5f55;
-  --clr-accent1: #bdd5ea;
+  --clr-accent1: #1962a1;
   --clr-accent2: #577399;
   --clr-bg: #f7f7ff;
   --clr-font: #242424;
+
+  --clr-shadow: #808080;
 }
 
 * {
@@ -25,7 +27,6 @@ body {
   margin: 0;
   background-color: var(--colorBg);
   background-color: rgb(53, 53, 53);
-
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;

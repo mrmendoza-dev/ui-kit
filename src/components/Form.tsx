@@ -72,41 +72,43 @@ export default function Form() {
 
         <fieldset className="form-fieldset">
           <legend className="form-legend">Current employment status</legend>
-          <input
-            className="form-radio"
-            type="radio"
-            id="unemployed"
-            name="employment"
-            value="unemployed"
-            checked={formData.employment === "unemployed"}
-            onChange={handleChange}
-          />
-          <label htmlFor="unemployed">Unemployed</label>
-          <br />
 
-          <input
-            className="form-radio"
-            type="radio"
-            id="part-time"
-            name="employment"
-            value="part-time"
-            checked={formData.employment === "part-time"}
-            onChange={handleChange}
-          />
-          <label htmlFor="part-time">Part-time</label>
-          <br />
+          <div className="form-radios">
+            <div className="radio">
+              <label htmlFor="unemployed">Unemployed</label>
+              <input
+                type="radio"
+                id="unemployed"
+                name="employment"
+                value="unemployed"
+                checked={formData.employment === "unemployed"}
+                onChange={handleChange}
+              />
+            </div>
 
-          <input
-            className="form-radio"
-            type="radio"
-            id="full-time"
-            name="employment"
-            value="full-time"
-            checked={formData.employment === "full-time"}
-            onChange={handleChange}
-          />
-          <label htmlFor="full-time">Full-time</label>
-          <br />
+            <div className="radio">
+              <label htmlFor="part-time">Part-time</label>
+              <input
+                type="radio"
+                id="part-time"
+                name="employment"
+                value="part-time"
+                checked={formData.employment === "part-time"}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="radio">
+              <label htmlFor="full-time">Full-time</label>
+              <input
+                type="radio"
+                id="full-time"
+                name="employment"
+                value="full-time"
+                checked={formData.employment === "full-time"}
+                onChange={handleChange}
+              />
+            </div>
+          </div>
         </fieldset>
         <br />
 
@@ -130,13 +132,13 @@ export default function Form() {
           name="favColor"
           className="form-select"
         >
-          <option value="red">Red</option>
-          <option value="orange">Orange</option>
-          <option value="yellow">Yellow</option>
-          <option value="green">Green</option>
-          <option value="blue">Blue</option>
-          <option value="indigo">Indigo</option>
-          <option value="violet">Violet</option>
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="indigo">Indigo</option>
+            <option value="violet">Violet</option>
         </select>
         <br />
         <br />

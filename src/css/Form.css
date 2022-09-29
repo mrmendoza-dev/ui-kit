@@ -19,7 +19,7 @@
 .form-textarea,
 .form-select {
   border-radius: 20px;
-  box-shadow: 3px 3px 3px #ddd;
+  box-shadow: 3px 3px 3px var(--clr-shadow);
   border: 1px solid #bbb;
   outline: none;
   padding: 0.3em 0.8em;
@@ -62,8 +62,8 @@
 .form-submit {
   font-size: 1.2rem;
   border-radius: 20px;
-  box-shadow: 3px 3px 3px #ddd;
-  border: 1px solid #bbb;
+  box-shadow: 3px 3px 3px var(--clr-shadow);
+  border: 1px solid var(--clr-shadow);
   outline: none;
   padding: 0.4em 0.8em;
   background-color: var(--clr-contrast);
@@ -72,4 +72,32 @@
   font-family: inherit;
 }
 .form-submit:hover {
+}
+
+
+
+.form-radios{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+}
+
+.radio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bcbcbc;
+    padding: 4px 8px;
+}
+
+.radio:first-child{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.radio:last-child{
+    border-bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

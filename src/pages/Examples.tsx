@@ -6,12 +6,14 @@ import SideNav from "../components/SideNav";
 import {Routes, Route, Link} from "react-router-dom"
 
 
-export default function Examples() {
+export default function Examples(props: any) {
   return (
     <div className="Examples page">
-      <SideNav />
+      <SideNav links={props.links}/>
 
-      <div className=""></div>
+      <div>
+
+      </div>
     </div>
   );
 }

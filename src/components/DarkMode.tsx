@@ -27,14 +27,18 @@ export default function DarkMode() {
     contrast: "#641ddf",
     accent1: "#2f5270",
     accent2: "#1e375a",
+    shadow: "#333",
+
   };
 
   const lightTheme = {
-    font: "#242424",
-    bg: "#f7f7ff",
-    contrast: "#fe5f55",
-    accent1: "#bdd5ea",
-    accent2: "#577399",
+    font: "#2d3142",
+    bg: "#ffffff",
+    contrast: "#ad1c11",
+    accent1: "#bfc0c0",
+    accent2: "#4f5d75",
+    shadow: "#999",
+
   };
 
   const colors = [
@@ -43,6 +47,7 @@ export default function DarkMode() {
     "--clr-contrast",
     "--clr-accent1",
     "--clr-accent2",
+    "--clr-shadow",
   ];
 
   function updateTheme(theme: any) {
@@ -51,6 +56,9 @@ export default function DarkMode() {
       root.style.setProperty("--clr-contrast", theme.contrast);
       root.style.setProperty("--clr-accent1", theme.accent1);
       root.style.setProperty("--clr-accent2", theme.accent2);
+      root.style.setProperty("--clr-shadow", theme.shadow);
+
+
   }
 
   function setTheme() {
