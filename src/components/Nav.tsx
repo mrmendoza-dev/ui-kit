@@ -4,6 +4,7 @@ import "../css/Nav.css";
 import "../css/index.css";
 import DarkMode from "./DarkMode";
 import logo from "../assets/images/logo.png";
+import { nanoid } from "nanoid";
 
 
 export default function Nav(props: any) {
@@ -18,8 +19,8 @@ export default function Nav(props: any) {
       </div>
 
       <ul className="nav-list">
-        {props.links.map((link) => (
-          <li className="nav-item">
+        {props.links.map((link: any) => (
+          <li className="nav-item" key={nanoid()}>
             <Link className="nav-link" to={link.path}>
               {link.name}
             </Link>

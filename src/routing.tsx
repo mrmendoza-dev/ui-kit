@@ -61,6 +61,10 @@
         path: "/apps/clock",
       },
       {
+        name: "Counter",
+        path: "/apps/counter",
+      },
+      {
         name: "Calculator",
         path: "/apps/calculator",
       },

@@ -1,0 +1,39 @@
+
+
+.Counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.counter-btn {
+        height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--clr-contrast);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.counter-val {
+    background-color: var(--clr-accent1);
+    color: white;
+    font-size: 2.4rem;
+    font-family: inherit;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-left {
+    margin-left: 1em;
+}
+.counter-right {
+    margin-right: 1em;
+}
