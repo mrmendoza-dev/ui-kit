@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 
 export default function Clipboard() {
-  function copyColor(e) {
+  function copyColor(e: any) {
     let color = e.currentTarget.style.backgroundColor.replace("#", "");
 
     let copyText = "";
