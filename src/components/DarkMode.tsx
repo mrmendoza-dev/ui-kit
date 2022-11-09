@@ -73,9 +73,9 @@ export default function DarkMode() {
   return (
     <button className="theme-btn" onClick={changeTheme}>
       {darkMode ? (
-        <i className="fa-solid fa-sun"></i>
+        <i style={{ color: "white" }} className="fa-solid fa-sun"></i>
       ) : (
-        <i className="fa-solid fa-moon"></i>
+        <i style={{ color: "black" }} className="fa-solid fa-moon"></i>
       )}
     </button>
   );
