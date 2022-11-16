@@ -1,18 +1,16 @@
-
-import "../css/input.css"
-import Form from "../components/Form";
 import Buttons from "../components/Buttons";
-import SideNav from "../components/SideNav";
-import {Routes, Route, Link} from "react-router-dom"
-
+import Form from "../components/Form";
+import SideNav from "../components/SideNavScroll";
+import "../css/input.css";
 
 export default function Examples(props: any) {
   return (
     <div className="Examples page">
-      <SideNav links={props.links}/>
+      <SideNav links={props.links} />
 
-      <div>
-
+      <div className="page-display">
+        <Form />
+        <Buttons />
       </div>
     </div>
   );

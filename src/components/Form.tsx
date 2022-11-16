@@ -30,7 +30,7 @@ export default function Form() {
   }
 
   return (
-    <div className="Form">
+    <div className="Form" id="forms">
       <form onSubmit={handleSubmit}>
         <h2>Forms</h2>
 
@@ -126,19 +126,19 @@ export default function Form() {
         <label htmlFor="favColor">What is your favorite color?</label>
         <br />
         <select
+          className="form-select"
           id="favColor"
-          value={formData.favColor}
           onChange={handleChange}
           name="favColor"
-          className="form-select"
+          value={formData.favColor}
         >
-            <option value="red">Red</option>
-            <option value="orange">Orange</option>
-            <option value="yellow">Yellow</option>
-            <option value="green">Green</option>
-            <option value="blue">Blue</option>
-            <option value="indigo">Indigo</option>
-            <option value="violet">Violet</option>
+          <option value="red">Red</option>
+          <option value="orange">Orange</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="indigo">Indigo</option>
+          <option value="violet">Violet</option>
         </select>
         <br />
         <br />

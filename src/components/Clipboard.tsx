@@ -11,7 +11,7 @@ export default function Clipboard() {
   }
 
   return (
-    <div className="Clipboard">
+    <div className="Clipboard" id="clipboard">
       <button className="" onClick={copyColor}>
         Buttons
       </button>

@@ -12,7 +12,7 @@ export default function Counter() {
       setCounter((prevCount) => prevCount - 1);
     }
   return (
-    <div className="Counter">
+    <div className="Counter" id="counter">
       <button className="counter-btn counter-left" onClick={subtractCounter}>
         <i className="fa-solid fa-minus"></i>
       </button>

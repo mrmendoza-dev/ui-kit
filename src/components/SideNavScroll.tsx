@@ -4,21 +4,16 @@ import { Link } from "react-router-dom";
 import "../css/SideNav.css";
 import "../css/index.css";
 
-
-export default function SideNav(props: any) {
-
-  
-
-
+export default function SideNavScroll(props: any) {
 
   return (
     <div className="SideNav">
       <ul className="side-nav-list">
         {props.links.map((link: any) => (
           <li className="side-nav-item">
-            <Link className="side-nav-link" to={link.path}>
+            <a className="side-nav-link" href={`#${link.path}`}>
               {link.name}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>

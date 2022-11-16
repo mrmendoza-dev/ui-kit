@@ -23,70 +23,70 @@
     const exampleLinks = [
       {
         name: "Forms",
-        path: "/examples/forms",
+        path: "forms",
       },
       {
         name: "Buttons",
-        path: "/examples/buttons",
+        path: "buttons",
       },
       {
         name: "Carousels",
-        path: "/examples/carousels",
+        path: "carousels",
       },
       {
         name: "Modals",
-        path: "/examples/modals",
+        path: "modals",
       },
       {
         name: "Marquees",
-        path: "/examples/marquees",
+        path: "marquees",
       },
       {
         name: "Audio Player",
-        path: "/apps/audio",
+        path: "audio-player",
       },
       {
         name: "Video Player",
-        path: "/apps/video",
+        path: "video-player",
       },
     ];
 
     const appLinks = [
       {
         name: "Converter",
-        path: "/apps/converter",
+        path: "converter",
       },
       {
         name: "Clock",
-        path: "/apps/clock",
+        path: "clock",
       },
       {
         name: "Counter",
-        path: "/apps/counter",
+        path: "counter",
       },
       {
         name: "Calculator",
-        path: "/apps/calculator",
+        path: "calculator",
       },
       {
         name: "Stock Tracker",
-        path: "/apps/stock",
+        path: "stock",
       },
       {
         name: "Crypto Tracker",
-        path: "/apps/crypto",
+        path: "crypto",
       },
       {
         name: "Autofill Search",
-        path: "/apps/autofill",
+        path: "autofill",
       },
       {
         name: "Item Filtering",
-        path: "/apps/filters",
+        path: "filters",
       },
       {
         name: "Weather Tracker",
-        path: "/apps/weather",
+        path: "weather",
       },
     ];
 
