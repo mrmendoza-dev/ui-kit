@@ -1,11 +1,30 @@
 import { nanoid } from "nanoid";
 import { Link } from "react-router-dom";
 import logo from "./logo.png";
-// import "../css/index.css";
 import "./index.css";
 import DarkMode from "./DarkMode";
 
 export default function Nav(props: any) {
+
+    const navLinks = [
+      {
+        name: "Home",
+        path: "/",
+      },
+      {
+        name: "Examples",
+        path: "/examples",
+      },
+      {
+        name: "Apps",
+        path: "/apps",
+      },
+      {
+        name: "Settings",
+        path: "/settings",
+      },
+    ];
+
   return (
     <div className="Nav">
       <div className="nav-title">
@@ -15,7 +34,7 @@ export default function Nav(props: any) {
       </div>
 
       <ul className="nav-list">
-        {props.links.map((link: any) => (
+        {navLinks.map((link: any) => (
           <li className="nav-item" key={nanoid()}>
             <Link className="nav-link" to={link.path}>
               {link.name}

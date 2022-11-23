@@ -81,6 +81,8 @@
   color: var(--clr-fontAccent);
   bottom: 0;
   position: absolute;
+  white-space: nowrap;
+
 }
 .footer-dir {
   display: flex;
@@ -114,6 +116,9 @@
   color: var(--clr-fontAccent);
   font-size: 1rem;
   transition: all 200ms;
+}
+.dir-link {
+  text-decoration: none;
 }
 
 .dir-item:hover {

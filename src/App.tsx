@@ -8,13 +8,12 @@ import Examples from "./pages/Examples";
 import Home from "./pages/Home";
 import Settings from "./pages/Settings";
 
-import { appLinks, exampleLinks, navLinks } from "./routing";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <Nav links={navLinks} />
+      <Nav />
 
       <div className="AppPage">
         {/* <SideNav /> */}
@@ -22,9 +21,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
 
-          <Route path="/examples" element={<Examples links={exampleLinks} />} />
+          <Route path="/examples" element={<Examples />} />
 
-          <Route path="/apps" element={<Apps links={appLinks} />} />
+          <Route path="/apps" element={<Apps />} />
 
           <Route path="/settings" element={<Settings />} />
         </Routes>
