@@ -1,5 +1,5 @@
 import Counter from "../apps/Counter";
-import SideNav from "../components/SideNavScroll";
+import SideNav from "../components/SideNav/SideNavScroll";
 
 export default function Apps(props: any) {
   return (

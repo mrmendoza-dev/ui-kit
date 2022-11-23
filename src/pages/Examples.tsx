@@ -1,6 +1,6 @@
 import Buttons from "../components/Buttons";
 import Form from "../components/Form";
-import SideNav from "../components/SideNavScroll";
+import SideNav from "../components/SideNav/SideNavScroll";
 import "../css/input.css";
 
 export default function Examples(props: any) {

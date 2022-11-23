@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "../css/Form.css"
-
+import { nanoid } from "nanoid";
+import html2canvas from "html2canvas";
 
 export default function Form() {
   const [formData, setFormData] = useState({
@@ -11,6 +12,9 @@ export default function Form() {
     isFriendly: true,
     employment: "",
     favColor: "",
+
+    fileType: "png",
+    clrAccent: "#000000",
   });
 
   function handleChange(event: any) {
@@ -29,11 +33,31 @@ export default function Form() {
     console.log(formData);
   }
 
+   function saveImg() {
+     html2canvas(document.getElementById("capture") as HTMLCanvasElement, {
+       allowTaint: true,
+       useCORS: true,
+     }).then(function (canvas: any) {
+       var anchorTag = document.createElement("a");
+       document.body.appendChild(anchorTag);
+       //  document.getElementById("previewImg").appendChild(canvas);
+       anchorTag.download = `img.${formData.fileType}`;
+       anchorTag.href = canvas.toDataURL();
+       anchorTag.target = "_blank";
+       anchorTag.click();
+     });
+   }
+
+   let choices = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]
+
   return (
     <div className="Form" id="forms">
+
+      <div className="form-display">
+      </div>
+      
       <form onSubmit={handleSubmit}>
         <h2>Forms</h2>
-
         <div className="form-main">
           <input
             className="form-input"
@@ -67,9 +91,7 @@ export default function Form() {
             name="comments"
           />
         </div>
-
         <br />
-
         <fieldset className="form-fieldset">
           <legend className="form-legend">Current employment status</legend>
 
@@ -111,7 +133,6 @@ export default function Form() {
           </div>
         </fieldset>
         <br />
-
         <input
           className="form-checkbox"
           type="checkbox"
@@ -122,7 +143,6 @@ export default function Form() {
         />
         <label htmlFor="isFriendly">Are you friendly?</label>
         <br />
-
         <label htmlFor="favColor">What is your favorite color?</label>
         <br />
         <select
@@ -132,16 +152,59 @@ export default function Form() {
           name="favColor"
           value={formData.favColor}
         >
-          <option value="red">Red</option>
-          <option value="orange">Orange</option>
-          <option value="yellow">Yellow</option>
-          <option value="green">Green</option>
-          <option value="blue">Blue</option>
-          <option value="indigo">Indigo</option>
-          <option value="violet">Violet</option>
+          {choices.map((choice: any) => {
+            return (
+              <option key={nanoid()} value={choice}>
+                {choice}
+              </option>
+            );
+          })}
         </select>
         <br />
-        <br />
+        <div className="form-row">
+          <p className="form-label">Import Image</p>
+          <input
+            className="form-input"
+            type="file"
+            accept="image/png, image/jpeg"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-row">
+          <p className="form-label">File Type</p>
+          <select
+            className="form-select"
+            onChange={handleChange}
+            name="fileType"
+            value={formData.fileType}
+          >
+            <option value="png">.png</option>
+            <option value="jpg">.jpg</option>
+            <option value="webp">.webp</option>
+          </select>
+        </div>
+        <button className="form-btn" onClick={saveImg}>
+          Download File
+        </button>
+        <div className="form-row">
+          <p className="form-label">Background</p>
+          <input
+            name="clrAccent"
+            type="color"
+            className="color-picker"
+            onChange={handleChange}
+            value={formData.clrAccent}
+          />
+          <input
+            className="form-input"
+            type="text"
+            onChange={handleChange}
+            name="clrAccent"
+            placeholder="#000000"
+            value={formData.clrAccent}
+          />
+        </div>
+
         <button className="form-submit">Submit</button>
       </form>
     </div>

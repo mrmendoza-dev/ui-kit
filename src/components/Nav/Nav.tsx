@@ -1,15 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import "../css/Nav.css";
-import "../css/index.css";
-import DarkMode from "./DarkMode";
-import logo from "../assets/images/logo.png";
 import { nanoid } from "nanoid";
-
+import { Link } from "react-router-dom";
+import logo from "./logo.png";
+// import "../css/index.css";
+import "./index.css";
+import DarkMode from "./DarkMode";
 
 export default function Nav(props: any) {
-
-
   return (
     <div className="Nav">
       <div className="nav-title">

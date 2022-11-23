@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import "../css/index.css";
-import "../css/Nav.css";
+// import "../css/index.css";
+// import "../css/Nav.css";
 
 export default function DarkMode() {
   const root: any = document.querySelector(":root");
@@ -28,6 +28,7 @@ export default function DarkMode() {
     accent1: "#2f5270",
     accent2: "#1e375a",
     shadow: "#333",
+    hr: "#333",
   };
 
   const lightTheme = {
@@ -37,7 +38,7 @@ export default function DarkMode() {
     accent1: "#bfc0c0",
     accent2: "#4f5d75",
     shadow: "#999",
-
+    hr: "#333",
   };
 
   const colors = [
@@ -56,7 +57,7 @@ export default function DarkMode() {
       root.style.setProperty("--clr-accent1", theme.accent1);
       root.style.setProperty("--clr-accent2", theme.accent2);
       root.style.setProperty("--clr-shadow", theme.shadow);
-
+      root.style.setProperty("--clr-hr", theme.hr);
 
   }
 

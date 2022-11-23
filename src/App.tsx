@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import Nav from "./components/Nav";
+import Footer from "./components/Nav/Footer";
+import Nav from "./components/Nav/Nav";
 import "./css/App.css";
 import Apps from "./pages/Apps";
 import Examples from "./pages/Examples";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }

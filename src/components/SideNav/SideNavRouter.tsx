@@ -1,8 +1,9 @@
 
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../css/SideNav.css";
-import "../css/index.css";
+import "./SideNav.css";
+// import "../css/index.css";
+import { nanoid } from "nanoid";
 
 export default function SideNavRouter(props: any) {
 
@@ -10,7 +11,7 @@ export default function SideNavRouter(props: any) {
     <div className="SideNav">
       <ul className="side-nav-list">
         {props.links.map((link: any) => (
-          <li className="side-nav-item">
+          <li className="side-nav-item" key={nanoid()}>
             <Link className="side-nav-link" to={link.path}>
               {link.name}
             </Link>
